@@ -1,0 +1,123 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "(project) auth-jwt-mysql-express",
+    "collectionId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+    "dateExported": "2025-01-11T14:12:57.537Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "e23d5033-7ed1-4eda-a332-17bae957a04e",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2025-01-11T13:59:11.317Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d32f8f48-5c10-47da-8aef-804a228b2f91",
+            "name": "Users",
+            "containerId": "",
+            "created": "2025-01-11T14:04:42.738Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8b31fe92-f270-4cd1-88ae-96b706dc64ad",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "e23d5033-7ed1-4eda-a332-17bae957a04e",
+            "name": "signup",
+            "url": "http://localhost:8080/api/auth/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-11T13:59:42.994Z",
+            "modified": "2025-01-11T14:09:16.754Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"mod\",\n  \"email\": \"mod@gmail.com\",\n  \"password\": \"12345678\",\n  \"roles\": [\"moderator\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "67cf1e2f-47a2-4936-9151-2c2886827c58",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "e23d5033-7ed1-4eda-a332-17bae957a04e",
+            "name": "signup",
+            "url": "http://localhost:8080/api/auth/signin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-01-11T14:02:03.508Z",
+            "modified": "2025-01-11T14:12:14.327Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"mod\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7f7048e5-b90e-40d1-803a-38d86849b303",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "d32f8f48-5c10-47da-8aef-804a228b2f91",
+            "name": "testAdminRole",
+            "url": "http://localhost:8080/api/test/admin",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-01-11T14:05:42.055Z",
+            "modified": "2025-01-11T14:07:46.590Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM2NjA0MjQ3LCJleHAiOjE3MzY2OTA2NDd9.OQvfJyxPwRXcVi_MLrLSA1mJOv0cDYgj0wiSDH7zQXE"
+                }
+            ]
+        },
+        {
+            "_id": "8ec21936-ed7f-49ac-84c1-60b3cb340bdb",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "d32f8f48-5c10-47da-8aef-804a228b2f91",
+            "name": "testUserRegistered",
+            "url": "http://localhost:8080/api/test/user",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-01-11T14:08:17.268Z",
+            "modified": "2025-01-11T14:10:37.733Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzM2NjA0NTYzLCJleHAiOjE3MzY2OTA5NjN9.7jNTawRZ3Q-ngUEvFNkEmsY_x5ZKDIpfj5c2QjTtOeU"
+                }
+            ]
+        },
+        {
+            "_id": "3c24c661-0a9c-40e8-8874-618dffaf05cd",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "d32f8f48-5c10-47da-8aef-804a228b2f91",
+            "name": "testPublicAccess",
+            "url": "http://localhost:8080/api/test/all",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-01-11T14:11:07.545Z",
+            "modified": "2025-01-11T14:11:18.046Z",
+            "headers": []
+        },
+        {
+            "_id": "cc232968-be0a-48da-8a6f-3c5b46535700",
+            "colId": "4c5d50ea-a175-4a35-9a16-1df833c5d88e",
+            "containerId": "d32f8f48-5c10-47da-8aef-804a228b2f91",
+            "name": "testModeratorRole",
+            "url": "http://localhost:8080/api/test/mod",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2025-01-11T14:11:38.278Z",
+            "modified": "2025-01-11T14:12:33.308Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzM2NjA0NzM0LCJleHAiOjE3MzY2OTExMzR9.KVfOstq0FZDfrHgb6V0bIFjvkJtqPoyV2zuodEV3udU"
+                }
+            ]
+        }
+    ],
+    "ref": "i082RqWUxpDmopk16Uq0HvcpS0R33z5T0MYqyzglZgHbgchDW2ouBbmVmeQf8XjLmjryxV-GH05gt-M3t7pd2Q"
+}
